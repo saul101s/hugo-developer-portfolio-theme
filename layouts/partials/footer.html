@@ -1,3 +1,12 @@
+<style>
+  h5 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+</style>
+
 <!-- footer -->
 <footer class="footer">
   <div class="uk-container">
@@ -10,10 +19,9 @@
       </div>
       <div>
         <h5 class="uk-margin-small-bottom">Address</h5>
-          <div uk-lightbox>
-            <a href="{{.Site.Params.footer.googlemaps}}" data-caption="{{.Site.Params.footer.address}}"
-               data-type="iframe">{{.Site.Params.footer.address}}</a>
-          </div>
+            <a href="{{.Site.Params.footer.googlemaps}}" data-caption="{{.Site.Params.footer.address}}"target="_blank">
+              {{.Site.Params.footer.address}}
+            </a>
       </div>
     </div>
 
