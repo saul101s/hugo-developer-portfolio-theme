@@ -48,8 +48,10 @@
         <div class="uk-text-center">
             {{ with .Site.Data.homepage.about }}
             <p class="uk-text-lead">{{.content | markdownify}}</p>
-            {{ with .button }}
-            <a class="uk-button uk-button-text" href="{{.URL| absURL}}">{{.btnText}}</a>
+            {{ range .buttons }}
+            <a class="uk-button uk-button-default" href="{{.url}}">
+                {{.text}}
+            </a>
             {{end}}
             {{end}}
         </div>
@@ -379,7 +381,7 @@
 
 
 -->
-<div class="uk-text-center uk-margin-xlarge-bottom uk-margin-xlarge-top">
+<div class="uk-text-center uk-margin-large-bottom uk-margin-large-top">
     <h1 class="uk-heading-line uk-text-center uk-heading-medium"><span>Find me</span></h1>
     <ul id="links" class="icons">
         {{ range .Site.Languages -}}
