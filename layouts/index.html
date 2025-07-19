@@ -25,8 +25,8 @@
         </div>
     </div>
     {{ end }}
-    <div class="uk-container uk-margin-large-top uk-margin-xlarge-bottom">
-        <h1 class="uk-heading-large">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
+    <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+        <h1 class="uk-heading-large uk-text-center">{{ .Site.Data.homepage.banner.title | safeHTML }}</h1>
     </div>
 
 
@@ -382,7 +382,7 @@
 
 -->
 <div class="uk-text-center uk-margin-large-bottom uk-margin-large-top">
-    <h1 class="uk-heading-line uk-text-center uk-heading-medium"><span>Know me</span></h1>
+    <h1 class="uk-heading-line uk-text-center uk-heading-medium"><span>Contact</span></h1>
     <ul id="links" class="icons">
         {{ range .Site.Languages -}}
         {{ if ne .LanguageName $.Site.Language.LanguageName }}
